@@ -7,50 +7,33 @@ class Fruit
     public $shape;
 
     //    method for name  ===============
-    public function set_name($name)
+    public function __construct($name, $color, $shape)
     {
         $this->name = $name;
-    }
-
-    public function get_name()
-    {
-        return $this->name;
-    }
-
-    //    method for color ===============
-    public function set_color($color)
-    {
         $this->color = $color;
-    }
-
-    public function get_color()
-    {
-        return $this->color;
+        $this->shape = $shape;
     }
 
 
-    //    method for shape  ===============
-    public function set_shape($shape)
-    {
-        return $this->shape = $shape;
-    }
+    // public function get_name()
+    // {
+    //     return $this->name;
+    // }
+
+    // public function get_color()
+    // {
+    //     return $this->color;
+    // }
+
 }
 
+$apple = new Fruit("Apple", "Green", "Circle");
 
-$apple = new Fruit();
-$apple->set_name("Apple");
-$apple->set_color("Green");
-$apple->set_shape("Circle");
-
-$banana = new Fruit();
-$banana->set_name("Banana");
-$banana->set_color("Yellow");
-$banana->set_shape("Sphere");
+$banana = new Fruit("Banana", "Yellow", "Sphere");
 
 // echo $apple->get_name();
 echo "For Apple";
 echo "<hr/>";
-echo "<br />";
 
 echo $apple->name;
 echo "<br />";
@@ -63,7 +46,6 @@ echo "<br />";
 
 echo "For Banana";
 echo "<hr/>";
-echo "<br />";
 // echo $apple->get_color();
 echo $banana->name;
 echo "<br />";
