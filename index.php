@@ -38,12 +38,16 @@ $banana = new Fruit();
 $banana->set_name("Banana");
 $banana->set_color("Yellow");
 
-echo $apple->get_name();
+// echo $apple->get_name();
+echo $apple->name;
 echo "<br />";
-echo $banana->get_name();
+// echo $banana->get_name();
+echo $banana->name;
 echo "<br />";
 echo "<br />";
 
-echo $apple->get_color();
+// echo $apple->get_color();
+echo $apple->color;
 echo "<br />";
-echo $banana->get_color();
+// echo $banana->get_color();
+echo $banana->color;
