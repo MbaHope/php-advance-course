@@ -16,16 +16,34 @@ class Fruit
     {
         return $this->name;
     }
+
+    //    methods
+    public function set_color($color)
+    {
+        $this->color = $color;
+    }
+
+    public function get_color()
+    {
+        return $this->color;
+    }
 }
+
+
 $apple = new Fruit();
 $apple->set_name("Apple");
+$apple->set_color("Green");
 
 $banana = new Fruit();
 $banana->set_name("Banana");
-
-$apple->get_name();
-$banana->get_name();
+$banana->set_color("Yellow");
 
 echo $apple->get_name();
 echo "<br />";
 echo $banana->get_name();
+echo "<br />";
+echo "<br />";
+
+echo $apple->get_color();
+echo "<br />";
+echo $banana->get_color();
