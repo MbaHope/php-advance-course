@@ -6,7 +6,7 @@ class Fruit
     public  $color;
     public $shape;
 
-    //    methods
+    //    method for name  ===============
     public function set_name($name)
     {
         $this->name = $name;
@@ -17,7 +17,7 @@ class Fruit
         return $this->name;
     }
 
-    //    methods
+    //    method for color ===============
     public function set_color($color)
     {
         $this->color = $color;
@@ -28,6 +28,8 @@ class Fruit
         return $this->color;
     }
 
+
+    //    method for shape  ===============
     public function set_shape($shape)
     {
         return $this->shape = $shape;
@@ -46,7 +48,8 @@ $banana->set_color("Yellow");
 $banana->set_shape("Sphere");
 
 // echo $apple->get_name();
-echo "For Apple"; echo "<hr/>";
+echo "For Apple";
+echo "<hr/>";
 echo "<br />";
 
 echo $apple->name;
@@ -58,7 +61,8 @@ echo $apple->shape;
 echo "<br />";
 echo "<br />";
 
-echo "For Banana";echo "<hr/>";
+echo "For Banana";
+echo "<hr/>";
 echo "<br />";
 // echo $apple->get_color();
 echo $banana->name;
